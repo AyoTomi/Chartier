@@ -1,0 +1,849 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+/* contact-information holds  the contact information for the NGO  */
+/* with the use of flex */
+.contact-information{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10rem;
+    background-color: #C30047;
+    color: white;
+    font-size: 14px;
+}
+.contactinfo-left i{
+    font-size: 0.8rem;
+}
+.contactinfo-left li{
+    list-style-type: none;
+    color: white;
+    display: inline;
+    font-size: 0.8rem;
+    margin-left: 0.32rem;
+    padding: .2rem;
+}
+.contactinfo-left li a{
+    color: white;
+}
+
+.contactinfo-right li{
+    list-style-type: none;
+    color: white;
+    display: inline;
+    margin-left: 0.65rem;
+    font-size: 1rem;
+}
+.contactinfo-right li a{
+    color: white;
+}
+
+.socials{
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+.nav-bar{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(233, 221, 221);
+    position:fixed;
+    top: 3rem;
+    margin: 0px;
+    padding: 0.65rem 1.25rem;
+    width: 100%;
+    height: 3.75rem;
+    z-index: 1000;
+}
+
+
+.nav-logo{
+    display: flex;
+    margin-right: auto;
+}
+
+.nav-logo img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.ngo-name h2{
+    color: rgb(71, 22, 22);
+    margin: .2rem 0rem .1rem .2rem;
+    font-size: 1.7rem;
+}
+
+.nav-bar-menu{
+
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    gap: 1.5rem;
+}
+
+.nav-bar-menu li{
+    display: flex;
+    list-style-type: none;
+}
+.nav-bar-menu li a {
+    color: rgb(71, 22, 22);
+    text-decoration: none
+}
+.nav-bar-menu li a:hover{
+    background-color: rgba(176, 136, 136, 0.418);
+    border-radius: 1.25rem;
+}
+
+.Donatebutton1{
+    background-color: #C30047;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 0.96rem;
+    padding: .63rem 1.25rem ;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    right: 1.875rem;
+}
+.Donatebutton1:hover{
+    background-color: rgb(69, 3, 3);
+    transform: scale(1.05);
+}
+.Donatebutton1:active{
+    background-color: rgb(37, 1, 1);
+    transform: scale(1);
+}
+
+.hero{
+    position: relative;
+}
+
+/* filter is to reduce the brightness of the  background image */
+/* the width is set to 100% to be fit into any viewpoint fully, as to the height to auto  to leave the brower to automatically give it height  */
+.hero img{
+    filter: brightness(60%); 
+    width: 100%;
+    height: auto;
+}
+.Support{
+    position: absolute;
+    color: white;
+    z-index: 30;
+    top: 31%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: start;
+}
+.Support h2{
+    color: white;
+    font-size: 5rem;
+    line-height: 3.625rem;
+}
+.Support   p{
+    font-weight: normal;
+    font-size: 1.125rem;
+    color: antiquewhite;
+    margin-top: 1.875rem;
+    position: relative;
+    bottom: 1.785rem;
+
+}
+.Active-cases{
+    background-color: rgb(215, 82, 82);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 1.875rem;
+    padding: 0.625rem 1.25rem ;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+    bottom: 3.125rem;
+    margin-top: 1.875rem;
+}
+.Active-cases:hover{
+    background-color: rgb(69, 3, 3);
+    transform: scale(1.05);
+}
+.Active-cases:active{
+    background-color: rgb(37, 1, 1);
+    transform: scale(1);
+}
+.causes-we-serve .card-heading{
+    text-align: center;
+    color: rgb(71, 22, 22);
+    font-size: 2rem;
+    padding-top: 2.5rem;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5625rem;
+    margin: 5.5%;
+}
+.card{
+    width: 325px;
+    height: 400px;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); 
+    overflow: hidden;
+    transition: transform 0.6s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.card img{
+    width: 100%;
+    height:40%;
+    object-fit: cover;
+}
+.progress-bar{
+    background-color: rgb(215, 82, 82);
+    width: 65%;
+    padding: 0px .625rem;
+    height: 6px;
+}
+.progress{
+    background-color:  rgb(215, 82, 82);
+    width: 2.5rem;
+    height: 0.9375rem;
+    border-radius: 1.25rem;
+    display: flex;
+    justify-content: center;
+    margin-left: 90%;
+}
+.progress p{
+    color: white;
+}
+.card .card-body  h3{
+    margin: 0.9375rem;
+    color: rgb(71, 22, 22);
+}
+.card .card-body  p{
+    color:rgba(71, 22, 22, 0.597);
+    font-size: .875rem;
+    line-height: 1.4;
+    padding: 0px .625rem .625rem .625rem;
+}
+.donation-update{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem .625rem .625rem 1.25rem;
+}
+.donation-update li{
+    list-style-type: none;
+    display: inline-block;
+    flex-wrap: wrap;
+    padding-left: .9375rem;
+}
+.donation-update li span{
+    color: rgb(103, 8, 8);
+}
+.section3{
+    background-color: blanchedalmond;
+    display: flex;
+    gap: 1.2rem;
+}
+.section3-image {
+    /* width: 20%;  
+    height: 100%;
+    border-radius: 1.25rem;
+    margin: 5rem 1.5rem 5rem 5rem; */
+    width: 35%;
+    max-width: 600px; /* Adjust this as needed */
+    height: 350px; /* Adjust this as needed */
+    overflow: hidden;
+    border-radius: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.8rem 2rem 1.8rem 6rem;
+}
+.section3-image img{
+    /* object-fit: contain;
+    height: 100%;
+    width: 20rem;  */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1.25rem;
+}
+.who-are-we{
+    /* margin: auto; */
+    padding:  5rem 4rem 5rem 5rem;
+    width: 35%;
+}
+.who-are-we h2{
+    color: rgb(71, 22, 22);
+    margin: 1.875rem 0px 1.25rem 0px;
+    font-size: 2.5rem;
+}
+.who-are-we p{
+    color: rgb(29, 29, 27);
+}
+.Learn-More{
+    background-color: rgb(215, 82, 82);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 1.875rem;
+    padding: .625rem 1.25rem ;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 1.875rem;
+}
+.Learn-More a{
+    text-decoration: none;
+    color: white;
+}
+.Learn-More:hover{
+    background-color: rgb(69, 3, 3);
+    transform: scale(1.05);
+}
+.Learn-More:active{
+    background-color: rgb(37, 1, 1);
+    transform: scale(1);
+}
+.mini-dashboard{
+    background-color:#FE637A;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    /* justify-content: center; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0%;
+    padding: 4.25rem;
+}
+.dashboard-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dashboard-img img{
+    width: 4.375rem;
+    padding: 10px;
+}
+
+.dashboard-text{
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+}
+
+.text-{
+    font-size: 16px;
+}
+.SERVE{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.main-serve {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+.serve-header h2{
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+    font-size: 30px;
+    color: #301A22
+}
+.serve-header p{
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+    color: #301A22
+}
+.serve-header{
+    width: 500px;
+    height: 150px;
+    display: inline-block;
+    word-wrap: break-word;
+    padding: 50px;
+    margin-bottom: 20px;
+}
+.serve-illustration-cover{
+    display: flex;
+    gap: 2rem;
+    padding-top: 15px;
+}
+.serve-illustration{
+    /* padding-left: 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .7rem;
+}
+.serve-illustration a{
+    text-decoration: none;
+    color: #301A22;
+    text-align: center;
+}
+.serve-illustration p{
+    color: #301A22;
+    text-align: center;
+}
+.main-illustration{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #FCF0F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-illustration img{
+    width: 30px;
+    height: 30px;
+}
+.text-illustration a:hover{
+        background-color: rgb(69, 3, 3);
+        transform: scale(1.05) ease-out;
+}
+.join{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    width: 85%;
+    margin: 8rem auto;
+}
+.join-head{
+    padding: 0px 15px;
+}
+.join-head p{
+    max-width: 30rem;
+}
+
+.join-head h2{
+    color: #301A22;
+    font-size: 46px;
+    padding: 0px 10px 0px 0px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.Join-Now{
+    background-color: rgb(215, 82, 82);
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 10px 20px ;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 30px;
+}
+.Join-Now a{
+    text-decoration: none;
+    color: white;
+}
+.Join-Now:hover{
+    background-color: rgb(69, 3, 3);
+    transform: scale(1.05);
+}
+.Join-Now:active{
+    background-color: rgb(37, 1, 1);
+    transform: scale(1);
+}
+.join-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.image1{
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px;
+}
+.image2{
+    max-width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px;
+}
+.image1 img{
+    width:250px;
+    height: 200px;
+}
+.image2 img{
+    width:250px;
+    height: 200px;
+}
+footer{
+    background-color: rgb(89, 21, 21);
+    padding: 75px 70px;
+    position: relative;
+
+}
+
+footer h2{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+.footer{
+    display: flex;
+    width: 85%;
+    align-items: flex-start;
+    justify-content: center;
+    justify-content: space-between;
+    gap: 4rem;
+    margin: 30px auto;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.footer-info img {
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+.footer-logo h2{
+    color: white;
+}
+.footer p{
+    color: beige;
+    padding-top: 10px;
+}
+.footer-socials{
+    margin: 15px 0px 0px 0px;
+}
+.footer-socials a{
+    color: white;
+    text-decoration-line: none;
+    margin: 15px 5px 0px 0px;
+} 
+.footer-nav h2{
+    color: white;
+    margin: 0px 0px 10px 0px;
+}
+.nav-links li {
+    list-style: none;
+    color: beige;
+    padding:3px;
+}
+.nav-links a{
+    color: beige;
+    text-decoration: none;
+}
+.footer-services h2{
+    color: white;
+    margin: 0px 0px 10px 0px;
+}
+.Services-links li{
+    list-style: none;
+    color: beige;
+    padding:3px;
+}
+.Services-links a{
+    color: beige;
+    text-decoration: none;
+}
+.newsletter-sub h2{
+    color: white;
+}
+.footer-email{
+    width: 90%;
+    border-radius: 20px;
+    background-color: rgb(89, 21, 21);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-top: 10px;
+}
+.footer-email input{
+    width: 100%;
+    padding: 10px 20px;
+    background: none;
+    color: #fff;
+    border: none;
+}
+.footer-email .submit{
+    width: 30%;
+    height: 40px;
+    background-color:  #C30047;
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+.submit a{
+    text-decoration: none;
+    color: white;
+    outline: medium;
+}
+
+.Copyright{
+     margin-top: 6rem;
+}
+.Copyright p{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    footer{
+        padding: 30px 50px;
+    }
+
+    .footer{
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .Support{
+        top: 20%;
+    }
+    .Support h2{
+        font-size: 45px;
+        line-height: 38px;
+    }
+    .Support   p{
+        font-weight: normal;
+        font-size: 14px;
+    }
+    .contact-information{
+        padding: 1rem 4rem;
+    }
+
+    .nav-logo{
+        margin-right: 0px;
+    }
+    .nav-bar-menu{
+        gap: .9rem;
+    }
+    .cards{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card {
+        width: 408px;
+        height: 401px;
+    }
+
+.mini-dashboard{
+    gap: 1rem;
+}
+    .footer{
+        gap: 5rem;
+        width: 100%;
+    }
+
+    .join{
+        align-items: center; 
+    }
+
+    .join-img{
+        flex-direction: column;
+    }
+    .mini-dashboard{
+        padding: 2.25rem;
+    }
+    .section3-image{
+        width: 48%;
+    }
+    .who-are-we{
+        width: 56%;
+    }
+    
+   
+}
+@media screen and (max-width: 786px) {
+    .section3-image{
+        width: 48%;
+    }
+    .who-are-we{
+        width: 56%;
+    }
+    .footer-email{
+        height: 27px;
+        .submit{
+            height: px;
+        }
+    }
+    
+}
+ 
+@media screen and (max-width:  480px) {
+    *{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .contact-information {
+        width: 100%;
+        gap: 8rem;
+    }
+    .nav-bar{
+        gap: 1rem;
+    }
+    .causes-we-serve{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cards{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5625rem;
+        margin: 5.5%;
+    }
+    .card{
+        width: 325px;
+        height: 400px;
+        background-color: antiquewhite;
+        border-radius: 15px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); 
+        overflow: hidden;
+        transition: transform 0.6s ease;
+    }
+    .card:hover {
+        transform: translateY(-10px);
+    }
+    .card img{
+        width: 100%;
+        height:40%;
+        object-fit: cover;
+    }
+    .progress-bar{
+        background-color: rgb(215, 82, 82);
+        width: 65%;
+        padding: 0px .625rem;
+        height: 6px;
+    }
+    .progress{
+        background-color:  rgb(215, 82, 82);
+        width: 2.5rem;
+        height: 0.9375rem;
+        border-radius: 1.25rem;
+        display: flex;
+        justify-content: center;
+        margin-left: 90%;
+    }
+    .progress p{
+        color: white;
+    }
+    .card .card-body  h3{
+        margin: 0.9375rem;
+        color: rgb(71, 22, 22);
+    }
+    .card .card-body  p{
+        color:rgba(71, 22, 22, 0.597);
+        font-size: .875rem;
+        line-height: 1.4;
+        padding: 0px .625rem .625rem .625rem;
+    }
+    .donation-update{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.25rem .625rem .625rem 2rem;
+    }
+    .donation-update li{
+        list-style-type: none;
+        display: inline-block;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+    .donation-update li span{
+        color: rgb(103, 8, 8);
+    }
+    .Donatebutton1{
+        padding: 0.9rem 0.55rem;
+        font-size: .75rem;
+    }
+    .section3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 1rem 3rem 1rem;
+    }
+    .section3-image{
+        margin: 1.8rem 2rem -5.2rem 2rem;
+    }
+    .who-are-we{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .who-are-we p{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .SERVE{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-illustration h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-info{
+        display: block;
+    }
+    
+    .footer-nav{
+        display: block;
+        /* flex-direction: ; */
+    }
+    .nav-links li{
+        flex-direction: column;
+    }
+   
+    .footer-services{
+        display: block;
+    }
+    .newsletter-sub{
+        display: block;
+    }
+    .Copyright{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    
+}
